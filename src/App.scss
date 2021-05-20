@@ -5,10 +5,9 @@
   
 }
 
-
 body {
   background-color: #232323;
-  color: #D11149;
+  color: #f17105;
   
 }
 
@@ -39,8 +38,34 @@ input:focus {
     font-size: 1.5rem;
     padding: 1rem;
     border-radius: 1.5rem;
-    outline: none;
   }
 }
 
+form {
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+}
 
+
+.address {
+
+  display: flex;
+  margin: 2rem 0;
+
+  label {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    
+    
+  }
+
+  input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+
+
+  }
+
+}
