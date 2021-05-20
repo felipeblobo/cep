@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+body {
+  background-color: #232323;
+  color: #D11149;
+  
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 4rem;
+  ;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-address {
+  margin: 2rem 0;
+
+  label {
+    font-size: 2rem;
+    margin-right: 1rem;
+    text-transform: uppercase;
+  }
+
+  input {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    outline: none;
+  }
+}
+
+
