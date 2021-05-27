@@ -2,13 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 body {
   background-color: #232323;
-  color: #f17105;
-  
+  color: #0fff95;
+  display: flex;
+  justify-content: center;
 }
 
 .App {
@@ -17,8 +29,9 @@ body {
 
 h1 {
   margin: 2rem 0;
-  font-size: 4rem;
-  ;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
 }
 
 input:focus {
@@ -26,46 +39,68 @@ input:focus {
 }
 
 .search-address {
-  margin: 2rem 0;
+  margin: 4rem 0;
 
   label {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 1rem;
-    text-transform: uppercase;
+    color: #95a3b3;
+    font-family: "Nanum Gothic", sans-serif;
   }
 
   input {
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1.5rem;
+    background-color: #d4dbe4;
+    border: none;
+    color: rgb(27, 27, 27);
+    text-align: center;
+    font-family: "Nanum Gothic", sans-serif;
+
+    &:focus {
+      border: 2px solid #0896dd;
+      background-color: #fff;
+    }
+  }
+
+  ::placeholder {
+    color: #00000063;
   }
 }
 
 form {
   max-width: 40rem;
-  width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
+  background-color: rgb(97, 97, 97, 0.3);
+  padding: 1rem 0;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Gothic", sans-serif;
+  box-shadow: 1px 1px 4px #c3c3c3;
 }
 
-
-.address {
-
+.input-form {
+  margin: 1rem 0;
+  width: 20rem;
   display: flex;
-  margin: 2rem 0;
+  flex-direction: column;
+  align-items: center;
 
   label {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    
-    
+    font-size: 1.2rem;
+    justify-content: flex-start;
   }
 
   input {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1.5rem;
-
-
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 0.5rem;
+    font-family: "Nanum Gothic", sans-serif;
   }
-
 }
